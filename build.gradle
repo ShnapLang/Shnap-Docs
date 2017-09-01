@@ -62,12 +62,6 @@ javadoc {
     destinationDir = file("docs")
 }
 
-jar {
-    manifest {
-        attributes("Main-Class":"com.gmail.socraticphoenix.shnap.run.app.ShnapMain")
-    }
-}
-
 shadowJar {
     classifier = "shadow"
     relocate "org.ow2.asm", "com.gmail.socraticphoenix.shnap.repack.org.ow2.asm"
